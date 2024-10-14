@@ -1,0 +1,21 @@
+services:
+  pixman:
+    image: pixman/pixman:latest
+    restart: always
+    container_name: pixman
+    environment:
+      # - http_proxy=http://192.168.50.50:7890
+      # - https_proxy=http://192.168.50.50:7890
+      # - MYTVSUPER_TOKEN=YOUR_TOKEN
+    ports:
+      - 4300:5000
+    volumes:
+       - ./m3u:/app/app/data/m3u
+  pixman-nginx:
+    image: nginx:latest
+    restart: always
+    container_name: pixman-nginx
+    ports:
+      - 7951:8000
+    volumes:
+       - ./pixman-nginx.conf:/etc/nginx/conf.d/pixman-nginx.conf
