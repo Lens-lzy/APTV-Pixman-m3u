@@ -11,7 +11,7 @@
 
 ## 一、前期硬件及软件还有知识准备
 
-### 硬件及软件准备 （请依据个人情况进行调整） 
+### 1. 硬件及软件准备 （请依据个人情况进行调整） 
 
 #### 观影软件及硬件 
 * **APTV Pro** （iPhone 15 Pro + Apple TV 7）
@@ -22,7 +22,7 @@
 * 安装 **Container Manager**
 ![DSM](img/DSM.png)
 ![CM](img/CotainerManager.png)
----
+
 
 ### 2. 知识储备（Reference写在前头，以表尊敬）  
 这里就要Refer大佬们原本的教程文档了，如果你动手能力极强，可以直接参考大佬们的教程：  
@@ -36,13 +36,13 @@
 ---
 
 ## 二、简易食用方法
-##### 1. 下载 `compose.yaml`以及`pixman-nginx.conf`文档
+### 1. 下载 `compose.yaml`以及`pixman-nginx.conf`文档
 ![file](img/file.png)
 这个`compose.yaml`文档你可以理解成是一个自动安装`pixman`和`pixman-nginx`的脚本,接下来~~可能需要修改它（你懒就不用，我都改好了）~~。
 而`pixman-nginx.conf`则是pixman-nginx的配置文件，这个文件不用改动。
 <br>
 
-##### 2. 修改 `compose.yaml`文档，以调整到符合你的安装环境
+### 2. 修改 `compose.yaml`文档，以调整到符合你的安装环境
 这里面主要要修改和注意的是**环境**`environment`当中的内容以及两个内容**端口**`port`的设定  
 * **修改`environment`**
 原代码如下:
@@ -76,14 +76,14 @@
 <br> 
 
 
-##### 3. 将以上两个文档上传至DSM
+### 3. 将以上两个文档上传至DSM
 在 **DSM** 的 **File Station** 打开 **docker** 目录 (你如果安装了一些软件或者Cotainer Manager以后，它会自动创建一个docker文件夹在你的目录里)，然后新建一个 pixman 文件夹，将以上两个文档都拖入其中。  
 ![start3](img/start3.png)
 <br>
 **PS:** ~~原教程中还有一步，创建一个**m3u**文件夹，用于储存m3u文件，其实没用，所以如果你没有这方面的需求，就不用创建了。~~
 <br>
 
-##### 4. 在Container Manager中创建项目并启动项目（以下内容均摘自Coding大佬的教程中，因为他写的够好了）
+### 4. 在Container Manager中创建项目并启动项目（以下内容均摘自Coding大佬的教程中，因为他写的够好了）
 
 1. 打开套件 **Container Manager**，新增项目，项目名称随便写（比如`pixman`），路径选择 `docker/pixman`，因为我们已经预先创建好了 `compose.yaml` 文件，所以选择 `使用现有的 docker-compose.yml 来创建项目`。
 ![start1](img/start1.png)
@@ -92,7 +92,7 @@
 2. 然后点击下一步，~~网站门户设置~~可以不管，点击完成，等待项目构建。
 ![start3](img/start4.png)
 
-##### 5.完成Docker的搭建，开始订阅，享受
+### 5.完成Docker的搭建，开始订阅，享受
 参考以下订阅地址，将订阅地址根据你的服务器来修改相对应的参数，即可完成订阅！
 
 ### 到这里，保证Docker成功运行，就可以不用管Docker了，只需要关注你的APTV就行了。
@@ -141,4 +141,4 @@
 ### 再次声明「佛曰需要」
 * 本资料中的所有资源均来自网络，仅作为爱好者的收集和分享之用，版权归原作者或原版权方所有。  
 * 如有侵权，请联系本人删除。本资料仅供学习与交流使用，请勿用于商业用途。
-* 我很胆小脆弱，你要指出illegal，我谢谢你，并且会立马删库跑路，我根正又苗红，热爱祖国热爱党！
+* 我很胆小脆弱，你要指出illegal，我谢谢你，并且会立马删库跑路，<font color="#dd0000">我根正又苗红，热爱祖国热爱党！</font><br /> 
