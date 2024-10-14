@@ -11,12 +11,13 @@
 
 ## 一、前期硬件及软件还有知识准备
 
-### 1. 观影设备及软件准备 （请依据个人情况进行调整） 
- 
-* **APTV Pro （iPhone 15 Pro + Apple TV 7）**
-建议软件内购买APTV Pro，因为可以多端设备同步，以及无限制订阅数量（才28块钱，值得）
+### 硬件及软件准备 （请依据个人情况进行调整） 
+
+#### 观影软件及硬件 
+* **APTV Pro** （iPhone 15 Pro + Apple TV 7）
+**建议**软件内购买APTV Pro，因为可以多端设备同步，以及无限制订阅数量（才28块钱，值得）
 ![APTV](img/APTV.png)
-#### 服务器及软件 
+#### Docker承载服务器及软件 
 * **群晖** DSM7.2  
 * 安装 **Container Manager**
 ![DSM](img/DSM.png)
@@ -75,8 +76,8 @@
 <br> 
 
 
-##### 3. 将以上两个文档拖入DSM中
-在`DSM`的 **File Station** 打开 **docker** 目录 (你如果安装了一些软件或者Cotainer Manager以后，它会自动创建一个docker文件夹在你的目录里)，然后新建一个 pixman 文件夹，将以上两个文档都拖入其中。  
+##### 3. 将以上两个文档上传至DSM
+在 **DSM** 的 **File Station** 打开 **docker** 目录 (你如果安装了一些软件或者Cotainer Manager以后，它会自动创建一个docker文件夹在你的目录里)，然后新建一个 pixman 文件夹，将以上两个文档都拖入其中。  
 ![start3](img/start3.png)
 <br>
 **PS:** ~~原教程中还有一步，创建一个**m3u**文件夹，用于储存m3u文件，其实没用，所以如果你没有这方面的需求，就不用创建了。~~
@@ -84,11 +85,11 @@
 
 ##### 4. 在Container Manager中创建项目并启动项目（以下内容均摘自Coding大佬的教程中，因为他写的够好了）
 
-1. 打开套件 Container Manager，新增项目，项目名称随便写，路径选择 docker/pixman，因为我们已经预先创建好了 compose.yaml 文件，所以选择 使用现有的 docker-compose.yml 来创建项目。
+1. 打开套件 **Container Manager**，新增项目，项目名称随便写（比如`pixman`），路径选择 `docker/pixman`，因为我们已经预先创建好了 `compose.yaml` 文件，所以选择 `使用现有的 docker-compose.yml 来创建项目`。
 ![start1](img/start1.png)
 ![start2](img/start2.png)
 
-2. 然后点击下一步，~~网站门户设置~~可以不管，点击完成，等待项目构建
+2. 然后点击下一步，~~网站门户设置~~可以不管，点击完成，等待项目构建。
 ![start3](img/start4.png)
 
 ##### 5.完成Docker的搭建，开始订阅，享受
