@@ -19,6 +19,8 @@
 #### 服务器及软件 
 * **群晖** DSM7.2  
 * 安装 **Container Manager**
+![DSM](img/DSM.png)
+![CM](img/CotainerManager.png)
 ---
 
 ### 2. 知识储备（Reference写在前头，以表尊敬）  
