@@ -43,8 +43,8 @@
 <br>
 
 ### 2. 修改 `compose.yaml`文档，以调整到符合你的安装环境
-这里面主要要修改和注意的是**环境**`environment`当中的内容以及两个内容**端口**`port`的设定  
-* **修改`environment`**
+这里面主要要修改和注意的是**环境**`environment`当中的内容以及两个内容**端口**`port`的设定<br>  
+* **修改`environment`**<br>
 原代码如下:
     ```
     environment:
@@ -56,7 +56,7 @@
     而最后一个，是MYTVSUPER的token获取，[myTV SUPER](https://www.mytvsuper.com/tc/home/)是香港一个很大的网络媒体，它有免费的频道，但大部分需要付费订阅后获取token，所以我提供的`compose.yaml`文件里这三行是被注释掉的，如果你有需要，把`#`删除即可。
 <br>
 
-* **修改`port`**
+* **修改`port`**<br>
 原代码如下:
     ```
     ports:
